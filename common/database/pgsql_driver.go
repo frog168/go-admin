@@ -11,9 +11,9 @@ import (
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 
-	goAdminLogger "github.com/go-admin-team/go-admin-core/logger"
 	"go-admin/common/config"
 	"go-admin/common/global"
+	goAdminLogger "go-admin/logger"
 	"go-admin/tools"
 	toolsConfig "go-admin/tools/config"
 )

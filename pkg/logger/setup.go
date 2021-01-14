@@ -4,8 +4,8 @@ import (
 	"go-admin/tools"
 	"path/filepath"
 
-	"github.com/go-admin-team/go-admin-core/debug/writer"
-	"github.com/go-admin-team/go-admin-core/logger"
+	"go-admin/debug/writer"
+	"go-admin/logger"
 
 	"go-admin/common/log"
 )

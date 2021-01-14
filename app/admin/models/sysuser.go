@@ -43,19 +43,19 @@ type SysUserId struct {
 }
 
 type SysUserB struct {
-	NickName  string `gorm:"size:128" json:"nickName"` // 昵称
-	Phone     string `gorm:"size:11" json:"phone"`     // 手机号
-	RoleId    int    `gorm:"" json:"roleId"`           // 角色编码
-	Salt      string `gorm:"size:255" json:"salt"`     //盐
-	Avatar    string `gorm:"size:255" json:"avatar"`   //头像
-	Sex       string `gorm:"size:255" json:"sex"`      //性别
-	Email     string `gorm:"size:128" json:"email"`    //邮箱
-	DeptId    int    `gorm:"" json:"deptId"`           //部门编码
-	PostId    int    `gorm:"" json:"postId"`           //职位编码
-	CreateBy  string `gorm:"size:128" json:"createBy"` //
-	UpdateBy  string `gorm:"size:128" json:"updateBy"` //
-	Remark    string `gorm:"size:255" json:"remark"`   //备注
-	Status    string `gorm:"size:4;" json:"status"`
+	NickName string `gorm:"size:128" json:"nickName"` // 昵称
+	Phone    string `gorm:"size:11" json:"phone"`     // 手机号
+	RoleId   int    `gorm:"" json:"roleId"`           // 角色编码
+	Salt     string `gorm:"size:255" json:"salt"`     //盐
+	Avatar   string `gorm:"size:255" json:"avatar"`   //头像
+	Sex      string `gorm:"size:255" json:"sex"`      //性别
+	Email    string `gorm:"size:128" json:"email"`    //邮箱
+	DeptId   int    `gorm:"" json:"deptId"`           //部门编码
+	PostId   int    `gorm:"" json:"postId"`           //职位编码
+	CreateBy string `gorm:"size:128" json:"createBy"` //创建人
+	UpdateBy string `gorm:"size:128" json:"updateBy"` //修改人
+	Remark   string `gorm:"size:255" json:"remark"`   //备注
+	Status   string `gorm:"size:4;" json:"status"`    //状态
 	BaseModel
 
 	DataScope string `gorm:"-" json:"dataScope"`

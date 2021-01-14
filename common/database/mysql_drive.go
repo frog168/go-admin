@@ -5,7 +5,7 @@ import (
 	. "log"
 	"time"
 
-	goAdminLogger "github.com/go-admin-team/go-admin-core/logger"
+	goAdminLogger "go-admin/logger"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

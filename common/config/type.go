@@ -1,9 +1,8 @@
 package config
 
 import (
+	"go-admin/logger"
 	"net/http"
-
-	"github.com/go-admin-team/go-admin-core/logger"
 )
 
 type Conf interface {

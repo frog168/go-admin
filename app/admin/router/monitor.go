@@ -2,10 +2,10 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/transfer"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go-admin/common/global"
 	"go-admin/common/log"
+	"go-admin/transfer"
 	"net/http"
 )
 

@@ -13,15 +13,11 @@ import (
 
 type SysFileInfoSearch struct {
 	dto.Pagination `search:"-"`
-	ID             uint `form:"ID" search:"type:exact;column:id;table:sys_file_info" comment:"标识"`
-
-	Type string `form:"type" search:"type:exact;column:type;table:sys_file_info" comment:"类型"`
-
-	Name string `form:"name" search:"type:exact;column:name;table:sys_file_info" comment:"名称"`
-
-	PId string `form:"pId" search:"type:exact;column:p_id;table:sys_file_info" comment:"目录"`
-
-	Source string `form:"source" search:"type:exact;column:source;table:sys_file_info" comment:"来源"`
+	ID             uint   `form:"ID" search:"type:exact;column:id;table:sys_file_info" comment:"标识"`
+	Type           string `form:"type" search:"type:exact;column:type;table:sys_file_info" comment:"类型"`
+	Name           string `form:"name" search:"type:exact;column:name;table:sys_file_info" comment:"名称"`
+	PId            string `form:"pId" search:"type:exact;column:p_id;table:sys_file_info" comment:"目录"`
+	Source         string `form:"source" search:"type:exact;column:source;table:sys_file_info" comment:"来源"`
 }
 
 func (m *SysFileInfoSearch) GetNeedSearch() interface{} {

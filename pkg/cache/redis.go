@@ -3,9 +3,9 @@ package cache
 import (
 	"time"
 
-	"github.com/go-admin-team/go-admin-core/cache"
 	"github.com/go-redis/redis/v7"
 	"github.com/matchstalk/redisqueue"
+	"go-admin/cache"
 )
 
 var RedisAdapter Adapter

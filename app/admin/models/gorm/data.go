@@ -82,6 +82,11 @@ func InitData(db *gorm.DB) {
 		{"p", "admin", "/api/v1/syssetting", "POST", "", "", ""},
 		{"p", "admin", "/api/v1/syssetting", "PUT", "", "", ""},
 		{"p", "admin", "/api/v1/syssetting/:id", "DELETE", "", "", ""},
+		{"p", "admin", "/api/v1/myuserlist", "GET", "", "", ""},
+		{"p", "admin", "/api/v1/myuser/:id", "GET", "", "", ""},
+		{"p", "admin", "/api/v1/myuser", "POST", "", "", ""},
+		{"p", "admin", "/api/v1/myuser", "PUT", "", "", ""},
+		{"p", "admin", "/api/v1/myuser/:id", "DELETE", "", "", ""},
 	}
 
 	db.Table("sys_casbin_rule").Create(list)
